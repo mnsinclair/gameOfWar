@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Exo 2", sans-serif;
+}
+body {
+    background-image: url("img/War.jpg");
+    background-color: darkgrey;
+    background-blend-mode: multiply;
+    background-size: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    border: black;
+    border-radius: 50px;
+}
+
+button {
+    background-color: #820e13;
+    padding: 1.5em 1em;
+    width: 100%;
+    border-radius: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+div.card-slot {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+}
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+button:nth-of-type(1) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+button:nth-of-type(2) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+img.card {
+    width: 100%;
+    height: 100%;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
